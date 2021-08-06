@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login page</title>
+    <link rel="icon" type="image/png" href="/icons-spring-logo.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous"/>
+
+</head>
+<body>
+<div class="container-fluid flex">
+    <div class="row justify-content-center">
+        <div class="col-md-2 pt-3 p-0 mt-5">
+            <form th:action="@{'/login'}" method="post">
+                <h2>Please sign in</h2>
+                <div class="form-group">
+                    <input type="email" name="j_email" class="form-control" required placeholder="Email address"
+                           autofocus>
+                    <input type="password" name="j_password" class="form-control" placeholder="Password" required
+                           autofocus>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
